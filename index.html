@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/dusk/64/apple-calculator.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calulator_Design (*-/+) </title>
+</head>
+<body>
+  <div class="bright">
+  <div class="bright1">
+     <span class="off"><i class="fa-regular fa-sun"></i></span>
+    </div>  
+    <span>OFF</span>
+    <span>ON</span>
+  </div>
+
+    <div class="container">
+        <div class="calulator">
+          <div class="inputbox">
+            <input type="text"  name="text"  id="inputsbox">
+          </div>
+          <div class="buttons">
+            <span onclick="Myclear()">AC</span>
+            <span onclick="Myvalues('/')">÷</span>
+            <span onclick="Myvalues('*')"> X</span>
+            <span onclick="Myclr()"><i class='fas fa-backspace' style='font-size:36px'></i></span>
+            <span class="mypoint">7</span>
+            <span class="mypoint">8</span>
+            <span class="mypoint">9</span>
+            <span class="mypoint">-</span>
+            <span class="mypoint">4</span>
+            <span class="mypoint">5</span>
+            <span class="mypoint">6</span>
+            <span class="mypoint">+</span>
+            <span class="mypoint">1</span>
+            <span class="mypoint">2</span>
+            <span class="mypoint">3</span>
+            <span class="grid-span" onclick="calculate()">=</span>
+            <span class="mypoint">.</span>
+            <span class="mypoint">0</span>
+            <span class="mypoint">%</span>
+           </div>
+        </div>
+    </div>    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

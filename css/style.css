@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.calulator {
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgb(7, 95, 91);
+}
+
+.calulator .inputbox {
+    width: 100%;
+    height: 40px;
+    margin: 20px auto;
+
+}
+
+.calulator .inputbox #inputsbox {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-family: sagar;
+    text-align: end;
+    padding: 0px 10px;
+    border: none;
+}
+
+.calulator #inputsbox:focus {
+    outline: none;
+
+}
+
+.calulator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    gap: 10px;
+
+}
+
+.calulator .buttons .grid-span {
+    grid-row: 4/6;
+    grid-column: 4/5;
+}
+
+@font-face {
+    font-family: sagar;
+    src: url(../Witch\ Magic.ttf);
+}
+
+.calulator .buttons span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background: rebeccapurple;
+    color: #fff;
+    transition: all 1s ease;
+    font-family: sagar;
+    font-size: 1.5em;
+}
+
+.calulator .buttons span:hover {
+    background-color: #fff;
+    color: #00000055;
+}
+
+.bright {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 50;
+    right: 150;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 115px;
+    height: 40px;
+    box-shadow: inset 5px 4px 10px #00000055;
+    font-family: sagar;
+}
+
+.bright .bright1 {
+    position: absolute;
+    top: 8%;
+    left: 15px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bright .bright1 .off {
+    font-size: 1.5rem;
+}
+
+.bright .bright1 {
+    transition: all .4s ease;
+
+}
+
+.bright .bright2 {
+    transform: translateX(55px);
+
+}
+
+@media only screen and (max-width:375px) {
+    .calulator {
+        width: 300px;
+    }
+
+    .bright {
+        top: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100px;
+        height: 30px;        
+    }
+    .bright .bright1 .off {
+       font-size: 1rem;
+    }
+    .bright .bright1{
+        top: 0%;
+        left: 11px;
+        padding: 7px;
+    }
+}
